@@ -1,0 +1,571 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D12131A91EE054AB006BD511 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131A81EE054AB006BD511 /* main.m */; };
+		D12131AC1EE054AB006BD511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131AB1EE054AB006BD511 /* AppDelegate.m */; };
+		D12131AF1EE054AB006BD511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131AE1EE054AB006BD511 /* ViewController.m */; };
+		D12131B21EE054AB006BD511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12131B01EE054AB006BD511 /* Main.storyboard */; };
+		D12131B41EE054AB006BD511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12131B31EE054AB006BD511 /* Assets.xcassets */; };
+		D12131B71EE054AB006BD511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12131B51EE054AB006BD511 /* LaunchScreen.storyboard */; };
+		D12131C21EE054AB006BD511 /* LanuchAdvertiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131C11EE054AB006BD511 /* LanuchAdvertiseTests.m */; };
+		D12131CD1EE054AB006BD511 /* LanuchAdvertiseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131CC1EE054AB006BD511 /* LanuchAdvertiseUITests.m */; };
+		D12131DC1EE05747006BD511 /* LauchWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131DB1EE05747006BD511 /* LauchWebViewController.m */; };
+		D12131E01EE05DF6006BD511 /* LandAdvertiseStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131DF1EE05DF6006BD511 /* LandAdvertiseStartView.m */; };
+		D12131E31EE06029006BD511 /* LaunchClickImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131E21EE06029006BD511 /* LaunchClickImageView.m */; };
+		D12131E61EE06139006BD511 /* GetLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131E51EE06139006BD511 /* GetLaunchImage.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D12131BE1EE054AB006BD511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D121319C1EE054AB006BD511 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D12131A31EE054AB006BD511;
+			remoteInfo = LanuchAdvertise;
+		};
+		D12131C91EE054AB006BD511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D121319C1EE054AB006BD511 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D12131A31EE054AB006BD511;
+			remoteInfo = LanuchAdvertise;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D12131A41EE054AB006BD511 /* LanuchAdvertise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LanuchAdvertise.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12131A81EE054AB006BD511 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D12131AA1EE054AB006BD511 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D12131AB1EE054AB006BD511 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D12131AD1EE054AB006BD511 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D12131AE1EE054AB006BD511 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D12131B11EE054AB006BD511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D12131B31EE054AB006BD511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D12131B61EE054AB006BD511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D12131B81EE054AB006BD511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12131BD1EE054AB006BD511 /* LanuchAdvertiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanuchAdvertiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12131C11EE054AB006BD511 /* LanuchAdvertiseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanuchAdvertiseTests.m; sourceTree = "<group>"; };
+		D12131C31EE054AB006BD511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12131C81EE054AB006BD511 /* LanuchAdvertiseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanuchAdvertiseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12131CC1EE054AB006BD511 /* LanuchAdvertiseUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LanuchAdvertiseUITests.m; sourceTree = "<group>"; };
+		D12131CE1EE054AB006BD511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D12131DA1EE05747006BD511 /* LauchWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauchWebViewController.h; sourceTree = "<group>"; };
+		D12131DB1EE05747006BD511 /* LauchWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauchWebViewController.m; sourceTree = "<group>"; };
+		D12131DE1EE05DF6006BD511 /* LandAdvertiseStartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandAdvertiseStartView.h; sourceTree = "<group>"; };
+		D12131DF1EE05DF6006BD511 /* LandAdvertiseStartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandAdvertiseStartView.m; sourceTree = "<group>"; };
+		D12131E11EE06029006BD511 /* LaunchClickImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LaunchClickImageView.h; sourceTree = "<group>"; };
+		D12131E21EE06029006BD511 /* LaunchClickImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchClickImageView.m; sourceTree = "<group>"; };
+		D12131E41EE06139006BD511 /* GetLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLaunchImage.h; sourceTree = "<group>"; };
+		D12131E51EE06139006BD511 /* GetLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLaunchImage.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D12131A11EE054AB006BD511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12131BA1EE054AB006BD511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12131C51EE054AB006BD511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D121319B1EE054AB006BD511 = {
+			isa = PBXGroup;
+			children = (
+				D12131A61EE054AB006BD511 /* LanuchAdvertise */,
+				D12131C01EE054AB006BD511 /* LanuchAdvertiseTests */,
+				D12131CB1EE054AB006BD511 /* LanuchAdvertiseUITests */,
+				D12131A51EE054AB006BD511 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D12131A51EE054AB006BD511 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D12131A41EE054AB006BD511 /* LanuchAdvertise.app */,
+				D12131BD1EE054AB006BD511 /* LanuchAdvertiseTests.xctest */,
+				D12131C81EE054AB006BD511 /* LanuchAdvertiseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D12131A61EE054AB006BD511 /* LanuchAdvertise */ = {
+			isa = PBXGroup;
+			children = (
+				D12131AA1EE054AB006BD511 /* AppDelegate.h */,
+				D12131AB1EE054AB006BD511 /* AppDelegate.m */,
+				D12131AD1EE054AB006BD511 /* ViewController.h */,
+				D12131AE1EE054AB006BD511 /* ViewController.m */,
+				D12131DA1EE05747006BD511 /* LauchWebViewController.h */,
+				D12131DB1EE05747006BD511 /* LauchWebViewController.m */,
+				D12131DD1EE05D7B006BD511 /* LandAdvertiseView */,
+				D12131B01EE054AB006BD511 /* Main.storyboard */,
+				D12131B31EE054AB006BD511 /* Assets.xcassets */,
+				D12131B51EE054AB006BD511 /* LaunchScreen.storyboard */,
+				D12131B81EE054AB006BD511 /* Info.plist */,
+				D12131A71EE054AB006BD511 /* Supporting Files */,
+			);
+			path = LanuchAdvertise;
+			sourceTree = "<group>";
+		};
+		D12131A71EE054AB006BD511 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D12131A81EE054AB006BD511 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D12131C01EE054AB006BD511 /* LanuchAdvertiseTests */ = {
+			isa = PBXGroup;
+			children = (
+				D12131C11EE054AB006BD511 /* LanuchAdvertiseTests.m */,
+				D12131C31EE054AB006BD511 /* Info.plist */,
+			);
+			path = LanuchAdvertiseTests;
+			sourceTree = "<group>";
+		};
+		D12131CB1EE054AB006BD511 /* LanuchAdvertiseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D12131CC1EE054AB006BD511 /* LanuchAdvertiseUITests.m */,
+				D12131CE1EE054AB006BD511 /* Info.plist */,
+			);
+			path = LanuchAdvertiseUITests;
+			sourceTree = "<group>";
+		};
+		D12131DD1EE05D7B006BD511 /* LandAdvertiseView */ = {
+			isa = PBXGroup;
+			children = (
+				D12131DE1EE05DF6006BD511 /* LandAdvertiseStartView.h */,
+				D12131DF1EE05DF6006BD511 /* LandAdvertiseStartView.m */,
+				D12131E11EE06029006BD511 /* LaunchClickImageView.h */,
+				D12131E21EE06029006BD511 /* LaunchClickImageView.m */,
+				D12131E41EE06139006BD511 /* GetLaunchImage.h */,
+				D12131E51EE06139006BD511 /* GetLaunchImage.m */,
+			);
+			name = LandAdvertiseView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D12131A31EE054AB006BD511 /* LanuchAdvertise */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12131D11EE054AB006BD511 /* Build configuration list for PBXNativeTarget "LanuchAdvertise" */;
+			buildPhases = (
+				D12131A01EE054AB006BD511 /* Sources */,
+				D12131A11EE054AB006BD511 /* Frameworks */,
+				D12131A21EE054AB006BD511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LanuchAdvertise;
+			productName = LanuchAdvertise;
+			productReference = D12131A41EE054AB006BD511 /* LanuchAdvertise.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D12131BC1EE054AB006BD511 /* LanuchAdvertiseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12131D41EE054AB006BD511 /* Build configuration list for PBXNativeTarget "LanuchAdvertiseTests" */;
+			buildPhases = (
+				D12131B91EE054AB006BD511 /* Sources */,
+				D12131BA1EE054AB006BD511 /* Frameworks */,
+				D12131BB1EE054AB006BD511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D12131BF1EE054AB006BD511 /* PBXTargetDependency */,
+			);
+			name = LanuchAdvertiseTests;
+			productName = LanuchAdvertiseTests;
+			productReference = D12131BD1EE054AB006BD511 /* LanuchAdvertiseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D12131C71EE054AB006BD511 /* LanuchAdvertiseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D12131D71EE054AB006BD511 /* Build configuration list for PBXNativeTarget "LanuchAdvertiseUITests" */;
+			buildPhases = (
+				D12131C41EE054AB006BD511 /* Sources */,
+				D12131C51EE054AB006BD511 /* Frameworks */,
+				D12131C61EE054AB006BD511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D12131CA1EE054AB006BD511 /* PBXTargetDependency */,
+			);
+			name = LanuchAdvertiseUITests;
+			productName = LanuchAdvertiseUITests;
+			productReference = D12131C81EE054AB006BD511 /* LanuchAdvertiseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D121319C1EE054AB006BD511 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = com.polycom;
+				TargetAttributes = {
+					D12131A31EE054AB006BD511 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 5UUHKU5P3B;
+						ProvisioningStyle = Automatic;
+					};
+					D12131BC1EE054AB006BD511 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 5UUHKU5P3B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D12131A31EE054AB006BD511;
+					};
+					D12131C71EE054AB006BD511 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = 5UUHKU5P3B;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D12131A31EE054AB006BD511;
+					};
+				};
+			};
+			buildConfigurationList = D121319F1EE054AB006BD511 /* Build configuration list for PBXProject "LanuchAdvertise" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D121319B1EE054AB006BD511;
+			productRefGroup = D12131A51EE054AB006BD511 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D12131A31EE054AB006BD511 /* LanuchAdvertise */,
+				D12131BC1EE054AB006BD511 /* LanuchAdvertiseTests */,
+				D12131C71EE054AB006BD511 /* LanuchAdvertiseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D12131A21EE054AB006BD511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12131B71EE054AB006BD511 /* LaunchScreen.storyboard in Resources */,
+				D12131B41EE054AB006BD511 /* Assets.xcassets in Resources */,
+				D12131B21EE054AB006BD511 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12131BB1EE054AB006BD511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12131C61EE054AB006BD511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D12131A01EE054AB006BD511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12131AF1EE054AB006BD511 /* ViewController.m in Sources */,
+				D12131DC1EE05747006BD511 /* LauchWebViewController.m in Sources */,
+				D12131E31EE06029006BD511 /* LaunchClickImageView.m in Sources */,
+				D12131AC1EE054AB006BD511 /* AppDelegate.m in Sources */,
+				D12131E61EE06139006BD511 /* GetLaunchImage.m in Sources */,
+				D12131E01EE05DF6006BD511 /* LandAdvertiseStartView.m in Sources */,
+				D12131A91EE054AB006BD511 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12131B91EE054AB006BD511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12131C21EE054AB006BD511 /* LanuchAdvertiseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12131C41EE054AB006BD511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D12131CD1EE054AB006BD511 /* LanuchAdvertiseUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D12131BF1EE054AB006BD511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D12131A31EE054AB006BD511 /* LanuchAdvertise */;
+			targetProxy = D12131BE1EE054AB006BD511 /* PBXContainerItemProxy */;
+		};
+		D12131CA1EE054AB006BD511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D12131A31EE054AB006BD511 /* LanuchAdvertise */;
+			targetProxy = D12131C91EE054AB006BD511 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D12131B01EE054AB006BD511 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D12131B11EE054AB006BD511 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D12131B51EE054AB006BD511 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D12131B61EE054AB006BD511 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D12131CF1EE054AB006BD511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D12131D01EE054AB006BD511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D12131D21EE054AB006BD511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5UUHKU5P3B;
+				INFOPLIST_FILE = LanuchAdvertise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuyafei.LanuchAdvertise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D12131D31EE054AB006BD511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5UUHKU5P3B;
+				INFOPLIST_FILE = LanuchAdvertise/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuyafei.LanuchAdvertise;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D12131D51EE054AB006BD511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5UUHKU5P3B;
+				INFOPLIST_FILE = LanuchAdvertiseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuyafei.LanuchAdvertiseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LanuchAdvertise.app/LanuchAdvertise";
+			};
+			name = Debug;
+		};
+		D12131D61EE054AB006BD511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 5UUHKU5P3B;
+				INFOPLIST_FILE = LanuchAdvertiseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuyafei.LanuchAdvertiseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LanuchAdvertise.app/LanuchAdvertise";
+			};
+			name = Release;
+		};
+		D12131D81EE054AB006BD511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5UUHKU5P3B;
+				INFOPLIST_FILE = LanuchAdvertiseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuyafei.LanuchAdvertiseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LanuchAdvertise;
+			};
+			name = Debug;
+		};
+		D12131D91EE054AB006BD511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 5UUHKU5P3B;
+				INFOPLIST_FILE = LanuchAdvertiseUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xuyafei.LanuchAdvertiseUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LanuchAdvertise;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D121319F1EE054AB006BD511 /* Build configuration list for PBXProject "LanuchAdvertise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12131CF1EE054AB006BD511 /* Debug */,
+				D12131D01EE054AB006BD511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D12131D11EE054AB006BD511 /* Build configuration list for PBXNativeTarget "LanuchAdvertise" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12131D21EE054AB006BD511 /* Debug */,
+				D12131D31EE054AB006BD511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D12131D41EE054AB006BD511 /* Build configuration list for PBXNativeTarget "LanuchAdvertiseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12131D51EE054AB006BD511 /* Debug */,
+				D12131D61EE054AB006BD511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D12131D71EE054AB006BD511 /* Build configuration list for PBXNativeTarget "LanuchAdvertiseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D12131D81EE054AB006BD511 /* Debug */,
+				D12131D91EE054AB006BD511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D121319C1EE054AB006BD511 /* Project object */;
+}
