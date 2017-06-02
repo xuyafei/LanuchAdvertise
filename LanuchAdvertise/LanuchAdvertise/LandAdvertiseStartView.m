@@ -56,4 +56,68 @@
     
     return self;
 }
+
+- (void)removeMyAdvertiseView {
+    if(_timer.isValid) {
+        [_timer invalidate];
+    }
+    _timer = nil;
+    
+    __weak typeof(self) weakSelf = self;
+    [UIView animateWithDuration:0.7 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        strongSelf.backgoundImageView.alpha = 0.0;
+        [strongSelf.backgoundImageView setFrame:CGRectMake(-[UIScreen mainScreen].bounds.size.width/20, -[UIScreen mainScreen].bounds.size.height/20, 1.1*[UIScreen mainScreen].bounds.size.width, 1.1*[UIScreen mainScreen].bounds.size.height)];
+        strongSelf.alpha = 0.0;
+    } completion:^(BOOL finished) {
+        __strong typeof(weakSelf) strongSelf = weakSelf;
+        [strongSelf removeFromSuperview];
+        if(_adsViewCompletion) {
+            _adsViewCompletion(strongSelf);
+        }
+    }];
+}
+
+
++ (instancetype)startAdvertiseViewWithBgImageUrl:(NSString *)imageUrl withClickImageAciton:(void (^)())action {
+    return [[self alloc] initWithBackGroundImage:imageUrl withClickImageAction:action];
+}
+
+- (void)startAnimationTime:(NSUInteger)time withCompletionBlock:(void (^)(LandAdvertiseStartView *))completionHandler {
+    _timeNum = time;
+    _adsViewCompletion = completionHandler;
+    
+    [[UIApplication sharedApplication].keyWindow addSubview:self];
+    [[UIApplication sharedApplication].keyWindow bringSubviewToFront:self];
+    [UIView animateWithDuration:0.5 animations:^{
+        _backgoundImageView.alpha = 1;
+    }];
+    
+    [_timeButton setTitle:[NSString stringWithFormat:@"跳过%zd",_timeNum] forState:UIControlStateNormal];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:nil repeats:YES];
+}
+
+- (void)_ImageClick:(UIImageView *)sender {
+    if(self.imageClickAction && _isImageDownLoaded) {
+        self.imageClickAction();
+        [self removeMyAdvertiseView];
+    }
+}
+
+- (void)jumpClick:(id)sender {
+    [self removeMyAdvertiseView];
+}
+
+- (void)timerAction:(NSTimer *)timer {
+    if(_timeNum == 0) {
+        [self removeMyAdvertiseView];
+        return;
+    }
+    _timeNum --;
+    
+    if(_isImageDownLoaded) {
+        [_timeButton setTitle:[NSString stringWithFormat:@"跳过%zd",_timeNum] forState:UIControlStateNormal];
+    }
+}
+
 @end

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "LanuchAdvertiseDataManager.h"
+#import "LandAdvertiseStartView.h"
 
 @interface AppDelegate ()
 
@@ -24,6 +26,13 @@
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tempViewController];
 
     self.window.rootViewController = navigationController;
+    
+    NSString *filePath = [LanuchAdvertiseDataManager getFilePathWithImageName:[[NSUserDefaults standardUserDefaults] valueForKey:advertiseImageName]];
+    BOOL isExist = [LanuchAdvertiseDataManager isFileExistWithFilePath:filePath];
+    
+    /*if(isExist) {
+        LandAdvertiseStartView *advertiseStartView =
+    }*/
     return YES;
 }
 

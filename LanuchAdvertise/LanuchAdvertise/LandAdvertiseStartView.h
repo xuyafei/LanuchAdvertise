@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+static NSString *const advertiseImageName = @"advertiseImageName";
+static NSString *const advertiseUrl = @"advertiseImageName";
+static NSString *const advertiseDeadline = @"advertiseImageName";
+
 @interface LandAdvertiseStartView : UIView
 
 + (instancetype)startAdvertiseViewWithBgImageUrl:(NSString *)imageUrl

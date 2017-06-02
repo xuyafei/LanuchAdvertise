@@ -19,6 +19,7 @@
 		D12131E01EE05DF6006BD511 /* LandAdvertiseStartView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131DF1EE05DF6006BD511 /* LandAdvertiseStartView.m */; };
 		D12131E31EE06029006BD511 /* LaunchClickImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131E21EE06029006BD511 /* LaunchClickImageView.m */; };
 		D12131E61EE06139006BD511 /* GetLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131E51EE06139006BD511 /* GetLaunchImage.m */; };
+		D12131E91EE11229006BD511 /* LanuchAdvertiseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131E81EE11229006BD511 /* LanuchAdvertiseDataManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		D12131E21EE06029006BD511 /* LaunchClickImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LaunchClickImageView.m; sourceTree = "<group>"; };
 		D12131E41EE06139006BD511 /* GetLaunchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetLaunchImage.h; sourceTree = "<group>"; };
 		D12131E51EE06139006BD511 /* GetLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLaunchImage.m; sourceTree = "<group>"; };
+		D12131E71EE11229006BD511 /* LanuchAdvertiseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanuchAdvertiseDataManager.h; sourceTree = "<group>"; };
+		D12131E81EE11229006BD511 /* LanuchAdvertiseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanuchAdvertiseDataManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				D12131AE1EE054AB006BD511 /* ViewController.m */,
 				D12131DA1EE05747006BD511 /* LauchWebViewController.h */,
 				D12131DB1EE05747006BD511 /* LauchWebViewController.m */,
+				D12131E71EE11229006BD511 /* LanuchAdvertiseDataManager.h */,
+				D12131E81EE11229006BD511 /* LanuchAdvertiseDataManager.m */,
 				D12131DD1EE05D7B006BD511 /* LandAdvertiseView */,
 				D12131B01EE054AB006BD511 /* Main.storyboard */,
 				D12131B31EE054AB006BD511 /* Assets.xcassets */,
@@ -310,6 +315,7 @@
 				D12131AC1EE054AB006BD511 /* AppDelegate.m in Sources */,
 				D12131E61EE06139006BD511 /* GetLaunchImage.m in Sources */,
 				D12131E01EE05DF6006BD511 /* LandAdvertiseStartView.m in Sources */,
+				D12131E91EE11229006BD511 /* LanuchAdvertiseDataManager.m in Sources */,
 				D12131A91EE054AB006BD511 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
