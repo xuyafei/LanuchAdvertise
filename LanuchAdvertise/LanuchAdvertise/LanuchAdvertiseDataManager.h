@@ -16,7 +16,7 @@
 @property(nonatomic, strong) UIImageView *splashIamgeView;
 @property(nonatomic, copy)   NSString *imageUrl;
 
-+ (void)downloadAdvertiseImageWithUrl:(NSString *)imageUrl iamgeName:(NSString *)imageName imageLinkUrl:(NSString *)imageLinkUrl imageDeadLine:(NSString *)imageDeadLine;
++ (void)downloadAdvertiseImageWithUrl:(NSString *)imageUrl iamgeName:(NSString *)imageName;
 
 + (BOOL)isFileExistWithFilePath:(NSString *)filePath;
 

@@ -19,7 +19,7 @@
 }
 
 + (void)getAdvertisingImageData {
-    NSString *imageUrl = @"http://img1.126.net/channel6/2016/022471/0805/2.jpg?dpi=6401136";
+    NSString *imageUrl = @"http://785j3g.com1.z0.glb.clouddn.com/d659db60-f.jpg";
     NSArray *stringArr = [imageUrl componentsSeparatedByString:@"/"];
     NSString *imageName = stringArr.lastObject;
     
@@ -27,11 +27,11 @@
     BOOL isExist = [self isFileExistWithFilePath:filePath];
     
     if(isExist) {
-        [self downloadAdvertiseImageWithUrl:imageUrl iamgeName:imageName imageLinkUrl:@"" imageDeadLine:@""];
+        [self downloadAdvertiseImageWithUrl:imageUrl iamgeName:imageName];
     }
 }
 
-+ (void)downloadAdvertiseImageWithUrl:(NSString *)imageUrl iamgeName:(NSString *)imageName imageLinkUrl:(NSString *)imageLinkUrl imageDeadLine:(NSString *)imageDeadLine {
++ (void)downloadAdvertiseImageWithUrl:(NSString *)imageUrl iamgeName:(NSString *)imageName {
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSData *data = [NSData dataWithContentsOfURL:[NSURL URLWithString:imageUrl]];
         UIImage *image = [UIImage imageWithData:data];

@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "LanuchAdvertiseDataManager.h"
 #import "LandAdvertiseStartView.h"
+#import "LauchWebViewController.h"
 
 @interface AppDelegate ()
 
@@ -27,12 +28,25 @@
 
     self.window.rootViewController = navigationController;
     
+    NSString *picUrl = @"http://785j3g.com1.z0.glb.clouddn.com/d659db60-f.jpg";
+    
     NSString *filePath = [LanuchAdvertiseDataManager getFilePathWithImageName:[[NSUserDefaults standardUserDefaults] valueForKey:advertiseImageName]];
     BOOL isExist = [LanuchAdvertiseDataManager isFileExistWithFilePath:filePath];
     
-    /*if(isExist) {
-        LandAdvertiseStartView *advertiseStartView =
-    }*/
+    if(isExist) {
+        LandAdvertiseStartView *advertiseStartView = [LandAdvertiseStartView startAdvertiseViewWithBgImageUrl:picUrl withClickImageAciton:^{
+            LauchWebViewController *advertiseViewController = [[LauchWebViewController alloc] init];
+            advertiseViewController.title = @"这是一个广告页";
+            [(UINavigationController *)self.window.rootViewController pushViewController:advertiseViewController animated:YES];
+        }];
+        
+        [advertiseStartView startAnimationTime:3 withCompletionBlock:^(LandAdvertiseStartView *advertiseView) {
+             NSLog(@"广告结束后，执行事件");
+        }];
+    } else {
+        [LanuchAdvertiseDataManager getAdvertisingImageData];
+    }
+    
     return YES;
 }
 
