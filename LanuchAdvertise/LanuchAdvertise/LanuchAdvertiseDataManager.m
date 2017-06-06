@@ -26,7 +26,7 @@
     NSString *filePath = [self getFilePathWithImageName:imageName];
     BOOL isExist = [self isFileExistWithFilePath:filePath];
     
-    if(isExist) {
+    if(!isExist) {
         [self downloadAdvertiseImageWithUrl:imageUrl iamgeName:imageName];
     }
 }
@@ -37,13 +37,14 @@
         UIImage *image = [UIImage imageWithData:data];
         
         NSString *filePath = [self getFilePathWithImageName:imageName];
+        [UIImageJPEGRepresentation(image, 0) writeToFile:filePath atomically:YES];
         if([UIImageJPEGRepresentation(image, 0) writeToFile:filePath atomically:YES]) {
             if(![imageName isEqualToString:[[NSUserDefaults standardUserDefaults] objectForKey:advertiseImageName]]) {
                 [self deleteOldImage];
             }
             
             [[NSUserDefaults standardUserDefaults] setValue:imageName forKey:advertiseImageName];
-            [[NSUserDefaults standardUserDefaults] setValue:imageUrl forKey:advertiseUrl];
+           // [[NSUserDefaults standardUserDefaults] setValue:imageUrl forKey:advertiseUrl];
         } else {
             NSLog(@"保存失败");
         }

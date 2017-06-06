@@ -9,6 +9,7 @@
 #import "LandAdvertiseStartView.h"
 #import "LaunchClickImageView.h"
 #import "GetLaunchImage.h"
+#import "LanuchAdvertiseDataManager.h"
 
 @interface LandAdvertiseStartView()
 
@@ -27,7 +28,8 @@
 
 @implementation LandAdvertiseStartView
 
-- (instancetype)initWithBackGroundImage:(NSString *)imageUrl withClickImageAction:(void(^)())action {
+- (instancetype)initWithBackGroundImage:(NSString *)imageUrl withImageFilePath:(NSString *)filePath
+                   withClickImageAction:(void(^)())action {
     self = [super initWithFrame:[UIScreen mainScreen].bounds];
     if(self) {
         _isImageDownLoaded = NO;
@@ -41,7 +43,8 @@
         _backgoundImageView = [[LaunchClickImageView alloc] initWithFrame:[UIScreen mainScreen].bounds];
         _backgoundImageView.alpha = 0.0;
         _backgoundImageView.contentMode = UIViewContentModeScaleToFill;
-        [_backgoundImageView addTarget:self action:@selector(imageClick:)];
+        [_backgoundImageView addTarget:self action:@selector(_ImageClick:)];
+        _backgoundImageView.image = [UIImage imageWithContentsOfFile:filePath];
         [self addSubview:_backgoundImageView];
         
         _timeButton = [[UIButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 13 - 52, 20, 52, 25)];
@@ -79,8 +82,8 @@
 }
 
 
-+ (instancetype)startAdvertiseViewWithBgImageUrl:(NSString *)imageUrl withClickImageAciton:(void (^)())action {
-    return [[self alloc] initWithBackGroundImage:imageUrl withClickImageAction:action];
++ (instancetype)startAdvertiseViewWithBgImageUrl:(NSString *)imageUrl withImageFilePath:(NSString *)filePath withClickImageAciton:(void (^)())action {
+    return [[self alloc] initWithBackGroundImage:imageUrl withImageFilePath:filePath withClickImageAction:action];
 }
 
 - (void)startAnimationTime:(NSUInteger)time withCompletionBlock:(void (^)(LandAdvertiseStartView *))completionHandler {
@@ -98,7 +101,7 @@
 }
 
 - (void)_ImageClick:(UIImageView *)sender {
-    if(self.imageClickAction && _isImageDownLoaded) {
+    if(self.imageClickAction) {
         self.imageClickAction();
         [self removeMyAdvertiseView];
     }
@@ -115,9 +118,7 @@
     }
     _timeNum --;
     
-    if(_isImageDownLoaded) {
-        [_timeButton setTitle:[NSString stringWithFormat:@"跳过%zd",_timeNum] forState:UIControlStateNormal];
-    }
+    [_timeButton setTitle:[NSString stringWithFormat:@"跳过%zd",_timeNum] forState:UIControlStateNormal];
 }
 
 @end

@@ -15,12 +15,10 @@ static NSString *const advertiseDeadline = @"advertiseImageName";
 @interface LandAdvertiseStartView : UIView
 
 + (instancetype)startAdvertiseViewWithBgImageUrl:(NSString *)imageUrl
+                               withImageFilePath:(NSString *)filePath
                             withClickImageAciton:(void(^)())action;
 
 - (void)startAnimationTime:(NSUInteger)time
        withCompletionBlock:(void(^)(LandAdvertiseStartView *advertiseView))completionHandler;
-
-- (void)downloadStartImage:(NSString *)imageUrl;
-
 
 @end

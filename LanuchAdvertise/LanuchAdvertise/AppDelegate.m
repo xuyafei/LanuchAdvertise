@@ -34,7 +34,7 @@
     BOOL isExist = [LanuchAdvertiseDataManager isFileExistWithFilePath:filePath];
     
     if(isExist) {
-        LandAdvertiseStartView *advertiseStartView = [LandAdvertiseStartView startAdvertiseViewWithBgImageUrl:picUrl withClickImageAciton:^{
+        LandAdvertiseStartView *advertiseStartView = [LandAdvertiseStartView startAdvertiseViewWithBgImageUrl:picUrl withImageFilePath:filePath withClickImageAciton:^{
             LauchWebViewController *advertiseViewController = [[LauchWebViewController alloc] init];
             advertiseViewController.title = @"这是一个广告页";
             [(UINavigationController *)self.window.rootViewController pushViewController:advertiseViewController animated:YES];

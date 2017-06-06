@@ -11,7 +11,6 @@
 		D12131AC1EE054AB006BD511 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131AB1EE054AB006BD511 /* AppDelegate.m */; };
 		D12131AF1EE054AB006BD511 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131AE1EE054AB006BD511 /* ViewController.m */; };
 		D12131B21EE054AB006BD511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12131B01EE054AB006BD511 /* Main.storyboard */; };
-		D12131B41EE054AB006BD511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12131B31EE054AB006BD511 /* Assets.xcassets */; };
 		D12131B71EE054AB006BD511 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12131B51EE054AB006BD511 /* LaunchScreen.storyboard */; };
 		D12131C21EE054AB006BD511 /* LanuchAdvertiseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131C11EE054AB006BD511 /* LanuchAdvertiseTests.m */; };
 		D12131CD1EE054AB006BD511 /* LanuchAdvertiseUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131CC1EE054AB006BD511 /* LanuchAdvertiseUITests.m */; };
@@ -20,6 +19,7 @@
 		D12131E31EE06029006BD511 /* LaunchClickImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131E21EE06029006BD511 /* LaunchClickImageView.m */; };
 		D12131E61EE06139006BD511 /* GetLaunchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131E51EE06139006BD511 /* GetLaunchImage.m */; };
 		D12131E91EE11229006BD511 /* LanuchAdvertiseDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D12131E81EE11229006BD511 /* LanuchAdvertiseDataManager.m */; };
+		D12131EB1EE5010F006BD511 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12131EA1EE5010F006BD511 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +47,6 @@
 		D12131AD1EE054AB006BD511 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D12131AE1EE054AB006BD511 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D12131B11EE054AB006BD511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D12131B31EE054AB006BD511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D12131B61EE054AB006BD511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D12131B81EE054AB006BD511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D12131BD1EE054AB006BD511 /* LanuchAdvertiseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LanuchAdvertiseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +65,7 @@
 		D12131E51EE06139006BD511 /* GetLaunchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetLaunchImage.m; sourceTree = "<group>"; };
 		D12131E71EE11229006BD511 /* LanuchAdvertiseDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanuchAdvertiseDataManager.h; sourceTree = "<group>"; };
 		D12131E81EE11229006BD511 /* LanuchAdvertiseDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanuchAdvertiseDataManager.m; sourceTree = "<group>"; };
+		D12131EA1EE5010F006BD511 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,9 +126,9 @@
 				D12131E81EE11229006BD511 /* LanuchAdvertiseDataManager.m */,
 				D12131DD1EE05D7B006BD511 /* LandAdvertiseView */,
 				D12131B01EE054AB006BD511 /* Main.storyboard */,
-				D12131B31EE054AB006BD511 /* Assets.xcassets */,
 				D12131B51EE054AB006BD511 /* LaunchScreen.storyboard */,
 				D12131B81EE054AB006BD511 /* Info.plist */,
+				D12131EA1EE5010F006BD511 /* Images.xcassets */,
 				D12131A71EE054AB006BD511 /* Supporting Files */,
 			);
 			path = LanuchAdvertise;
@@ -283,7 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D12131B71EE054AB006BD511 /* LaunchScreen.storyboard in Resources */,
-				D12131B41EE054AB006BD511 /* Assets.xcassets in Resources */,
+				D12131EB1EE5010F006BD511 /* Images.xcassets in Resources */,
 				D12131B21EE054AB006BD511 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +465,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5UUHKU5P3B;
 				INFOPLIST_FILE = LanuchAdvertise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -477,6 +478,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 5UUHKU5P3B;
 				INFOPLIST_FILE = LanuchAdvertise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
